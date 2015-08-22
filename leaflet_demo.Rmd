@@ -1,0 +1,31 @@
+---
+title: "HTML Widgets: Leaflet Demo"
+output:
+  html_document:
+    self_contained: no
+
+---
+<style>
+span.pkgname {
+   font-size:100%;
+   color: #900;
+   white-space: pre;
+   background-color: whiteSmoke;
+   border: 1px dotted #785;
+   padding: 0.2em;
+}
+</style>
+
+<span class="pkgname">leaflet</span> is a JavaScript library for creating dynamic maps that support panning and zooming along with various annotations like markers, polygons, and popups. Viewing map tiles requires an internet connection.
+
+```{r, fig.width=7, fig.align='center', message=FALSE}
+library(leaflet)
+orstationc <- read.csv("orstationc.csv")
+pal <- colorQuantile("YlOrRd", NULL, n = 8)
+leaflet(orstationc) %>% addTiles() %>% addCircleMarkers(color = ~pal(tann))
+```
+
+Support for other map tiles, markers, popups, sp objects (points, lines, polygons), and GeoJSON 
+
+More info: <http://rstudio.github.io/leaflet/>
+
