@@ -30,7 +30,7 @@ code > span.fu { color: #06287e; }
 code > span.er { color: #ff0000; font-weight: bold; }
   </style>
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
-    href="interactive-data-viz_files\Slidy2/styles/slidy.css" />
+    href="interactive-data-viz_files/Slidy2/styles/slidy.css" />
   <style>
   div.colleft {
       float:left;
@@ -91,7 +91,7 @@ code > span.er { color: #ff0000; font-weight: bold; }
   <script src="interactive-data-viz_files/moment-2.8.4/moment.js"></script>
   <script src="interactive-data-viz_files/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
   <script src="interactive-data-viz_files/dygraphs-binding-0.4.5/dygraphs.js"></script>
-  <script src="interactive-data-viz_files\Slidy2/scripts/slidy.js"
+  <script src="interactive-data-viz_files/Slidy2/scripts/slidy.js"
     charset="utf-8" type="text/javascript"></script>
 </head>
 <body>
@@ -156,7 +156,7 @@ Andy Lyons
 </ul>
 </div>
 <div class="colright" style="text-align:center;">
-<span style="line-height: 200%;"> Present results<br />↓<br />↓<br />↓<br />↓<br />↓<br />↓<br />↓<br />↓<br />↓<br />Explore data </span>
+<span style="line-height: 200%;"> Present results<br />?<br />?<br />?<br />?<br />?<br />?<br />?<br />?<br />?<br />Explore data </span>
 </div>
 <div class="colclear">
 
@@ -276,7 +276,7 @@ Source: Ezekiel, M. (1930) Methods of Correlation Analysis. Wiley.
 <div id="r-markdown-merely-a-means-to-an-end" class="slide section level1">
 <h1>R Markdown: Merely A Means to an End</h1>
 <div style="margin-top:80px; text-align:center;">
-*.Rmd → <span class="pkgname">knitr</span> → *.md → <span class="pkgname">pandoc</span> → <span style="display:inline-block; margin-left:0.6em; vertical-align:middle; text-align:left;">*.pdf (requires TeK also)<br><br>*.doc<br><br>*.html (+ *.css, *.js *.ttf)</span>
+*.Rmd ? <span class="pkgname">knitr</span> ? *.md ? <span class="pkgname">pandoc</span> ? <span style="display:inline-block; margin-left:0.6em; vertical-align:middle; text-align:left;">*.pdf (requires TeK also)<br><br>*.doc<br><br>*.html (+ *.css, *.js *.ttf)</span>
 </div>
 </div>
 <div id="r-markdown-support-in-rstudio" class="slide section level1">
@@ -658,7 +658,7 @@ lungDeaths &lt;-<span class="st"> </span><span class="kw">cbind</span>(mdeaths, 
 </div>
 <div id="html-widget-leaflet" class="slide section level1">
 <h1>HTML Widget: Leaflet</h1>
-<h3 id="leaflet_demo.html"><a href="Leaflet_demo.html" target="_top">Leaflet_demo.html</a></h3>
+<h3 id="leaflet_demo.html"><a href="leaflet_demo.html" target="_top">leaflet_demo.html</a></h3>
 </div>
 <div id="googlevis" class="slide section level1">
 <h1>googleVis</h1>
@@ -685,12 +685,12 @@ Pie &lt;- gvisPieChart(CityPopularity, options = list(width=400, height=400))
 plot(Pie)
 ```</code></pre>
 <!-- PieChart generated in R 3.2.2 by googleVis 0.5.9 package -->
-<!-- Fri Aug 21 17:07:28 2015 -->
+<!-- Fri Aug 21 20:59:24 2015 -->
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataPieChartID21543e901f34 () {
+function gvisDataPieChartID2204f91148c () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -726,15 +726,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartPieChartID21543e901f34() {
-var data = gvisDataPieChartID21543e901f34();
+function drawChartPieChartID2204f91148c() {
+var data = gvisDataPieChartID2204f91148c();
 var options = {};
 options["allowHtml"] = true;
 options["width"] =    400;
 options["height"] =    400;
 
     var chart = new google.visualization.PieChart(
-    document.getElementById('PieChartID21543e901f34')
+    document.getElementById('PieChartID2204f91148c')
     );
     chart.draw(data,options);
     
@@ -758,9 +758,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartPieChartID21543e901f34);
+callbacks.push(drawChartPieChartID2204f91148c);
 })();
-function displayChartPieChartID21543e901f34() {
+function displayChartPieChartID2204f91148c() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -783,9 +783,9 @@ callbacks.shift()();
 // jsFooter
 </script>
 <!-- jsChart -->
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID21543e901f34"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID2204f91148c"></script>
 <!-- divChart -->
-<div id="PieChartID21543e901f34" style="width: 400; height: 400;">
+<div id="PieChartID2204f91148c" style="width: 400; height: 400;">
 
 </div>
 <h3 id="supercharged-scatter-plot">Supercharged Scatter Plot</h3>
@@ -813,7 +813,7 @@ gvScat &lt;- gvisScatterChart(curvy,
 plot(gvScat)
 ```</code></pre>
 <!-- ScatterChart generated in R 3.2.2 by googleVis 0.5.9 package -->
-<!-- Fri Aug 21 17:07:28 2015 -->
+<!-- Fri Aug 21 20:59:24 2015 -->
 <!-- jsHeader -->
 <script type="text/javascript">
  
@@ -1710,12 +1710,12 @@ callbacks.shift()();
 <pre class="sourceCode r"><code class="sourceCode r">M &lt;-<span class="st"> </span><span class="kw">gvisMotionChart</span>(Fruits, <span class="st">&#39;Fruit&#39;</span>, <span class="st">&#39;Year&#39;</span>, <span class="dt">options=</span><span class="kw">list</span>(<span class="dt">width=</span><span class="dv">400</span>, <span class="dt">height=</span><span class="dv">350</span>))
 <span class="kw">plot</span>(M)</code></pre>
 <!-- MotionChart generated in R 3.2.2 by googleVis 0.5.9 package -->
-<!-- Fri Aug 21 17:07:28 2015 -->
+<!-- Fri Aug 21 20:59:24 2015 -->
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID21547f4f694c () {
+function gvisDataMotionChartID2204413d7e11 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -1813,15 +1813,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID21547f4f694c() {
-var data = gvisDataMotionChartID21547f4f694c();
+function drawChartMotionChartID2204413d7e11() {
+var data = gvisDataMotionChartID2204413d7e11();
 var options = {};
 options["width"] =    400;
 options["height"] =    350;
 options["state"] = "";
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID21547f4f694c')
+    document.getElementById('MotionChartID2204413d7e11')
     );
     chart.draw(data,options);
     
@@ -1845,9 +1845,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID21547f4f694c);
+callbacks.push(drawChartMotionChartID2204413d7e11);
 })();
-function displayChartMotionChartID21547f4f694c() {
+function displayChartMotionChartID2204413d7e11() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -1870,9 +1870,9 @@ callbacks.shift()();
 // jsFooter
 </script>
 <!-- jsChart -->
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID21547f4f694c"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID2204413d7e11"></script>
 <!-- divChart -->
-<div id="MotionChartID21547f4f694c" style="width: 400; height: 350;">
+<div id="MotionChartID2204413d7e11" style="width: 400; height: 350;">
 
 </div>
 <blockquote>

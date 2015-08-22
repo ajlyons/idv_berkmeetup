@@ -664,7 +664,7 @@ More info: <http://rstudio.github.io/dygraphs>
 
 # HTML Widget: Leaflet 
 
-### <a href="Leaflet_demo.html" target="_top">Leaflet_demo.html</a>
+### <a href="leaflet_demo.html" target="_top">leaflet_demo.html</a>
 
 # googleVis
 
