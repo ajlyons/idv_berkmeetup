@@ -30,7 +30,7 @@ code > span.fu { color: #06287e; }
 code > span.er { color: #ff0000; font-weight: bold; }
   </style>
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
-    href="idv_berkeley-meetup_files\Slidy2/styles/slidy.css" />
+    href="interactive-data-viz_files\Slidy2/styles/slidy.css" />
   <style>
   div.colleft {
       float:left;
@@ -65,12 +65,12 @@ code > span.er { color: #ff0000; font-weight: bold; }
       color: black;
   }
   code {
-      font-size: 80%;
+      font-size: 90%;
       font-weight: normal;
   }
   pre.markdown {
       margin:1em 2em;
-      font-size:75%;
+      font-size:80%;
       font-weight: normal;
       background-color: WhiteSmoke;
       border: none;
@@ -80,18 +80,18 @@ code > span.er { color: #ff0000; font-weight: bold; }
   pre:not([r]) {background-color:#F5F5F5;}
   
   </style>
-  <script src="idv_berkeley-meetup_files/htmlwidgets-0.5/htmlwidgets.js"></script>
-  <script src="idv_berkeley-meetup_files/jquery-1.11.1/jquery.min.js"></script>
-  <script src="idv_berkeley-meetup_files/datatables-binding-0.1/datatables.js"></script>
-  <script src="idv_berkeley-meetup_files/datatables-1.10.7/jquery.dataTables.min.js"></script>
-  <link href="idv_berkeley-meetup_files/datatables-default-1.10.7/dataTables.extra.css" rel="stylesheet" />
-  <link href="idv_berkeley-meetup_files/datatables-default-1.10.7/jquery.dataTables.min.css" rel="stylesheet" />
-  <link href="idv_berkeley-meetup_files/dygraphs-1.0.1/dygraph.css" rel="stylesheet" />
-  <script src="idv_berkeley-meetup_files/dygraphs-1.0.1/dygraph-combined.js"></script>
-  <script src="idv_berkeley-meetup_files/moment-2.8.4/moment.js"></script>
-  <script src="idv_berkeley-meetup_files/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
-  <script src="idv_berkeley-meetup_files/dygraphs-binding-0.4.5/dygraphs.js"></script>
-  <script src="idv_berkeley-meetup_files\Slidy2/scripts/slidy.js"
+  <script src="interactive-data-viz_files/htmlwidgets-0.5/htmlwidgets.js"></script>
+  <script src="interactive-data-viz_files/jquery-1.11.1/jquery.min.js"></script>
+  <script src="interactive-data-viz_files/datatables-binding-0.1/datatables.js"></script>
+  <script src="interactive-data-viz_files/datatables-1.10.7/jquery.dataTables.min.js"></script>
+  <link href="interactive-data-viz_files/datatables-default-1.10.7/dataTables.extra.css" rel="stylesheet" />
+  <link href="interactive-data-viz_files/datatables-default-1.10.7/jquery.dataTables.min.css" rel="stylesheet" />
+  <link href="interactive-data-viz_files/dygraphs-1.0.1/dygraph.css" rel="stylesheet" />
+  <script src="interactive-data-viz_files/dygraphs-1.0.1/dygraph-combined.js"></script>
+  <script src="interactive-data-viz_files/moment-2.8.4/moment.js"></script>
+  <script src="interactive-data-viz_files/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
+  <script src="interactive-data-viz_files/dygraphs-binding-0.4.5/dygraphs.js"></script>
+  <script src="interactive-data-viz_files\Slidy2/scripts/slidy.js"
     charset="utf-8" type="text/javascript"></script>
 </head>
 <body>
@@ -112,14 +112,17 @@ Andy Lyons
 <li>Shiny</li>
 <li>Publishing</li>
 </ul>
+<div style="text-align:center; margin: 100px 0px;">
+<u>Keyboard shortcuts for viewing slides</u><br><em>b</em>: bigger font<br><em>s</em>: smaller font<br><em>c</em>: table of contents<br><em>a</em>: show all slides at once
+</div>
 </div>
 <div class="slide section level1">
 
 <div style="text-align:center; margin: 25px 0px;">
 <img src="images/burgess_viewofsf_800x446.jpg" style="border:10px solid SaddleBrown;">
 </div>
-<div style="text-align:center; margin: 25px 0px;">
-<a href="http://github.com/ajlyons/" class="uri">http://github.com/ajlyons/</a>
+<div class="incremental" style="text-align:center; margin: 25px 0px; line-height: 200%;">
+<span>Slides: <a href="http://www.andylyons.org/pres/idv_berkmeetup/interactive-data-viz.html" class="uri">http://www.andylyons.org/pres/idv_berkmeetup/interactive-data-viz.html</a></span><br> <span>Rmd: <a href="https://github.com/ajlyons/idv_berkmeetup" class="uri">https://github.com/ajlyons/idv_berkmeetup</a></span>
 </div>
 </div>
 <div id="interactivity-sampler" class="slide section level1">
@@ -132,8 +135,8 @@ Andy Lyons
 <li><a href="http://shiny.snap.uaf.edu/ak_station_cru_eda/" class="uri">http://shiny.snap.uaf.edu/ak_station_cru_eda/</a></li>
 </ul>
 </div>
-<div id="is-all-interactivity-equal" class="slide section level1">
-<h1>Is All Interactivity Equal?</h1>
+<div id="why-do-we-like-interactivity" class="slide section level1">
+<h1>Why Do We Like Interactivity?</h1>
 </div>
 <div id="spectrum-of-interactivity" class="slide section level1">
 <h1>Spectrum of Interactivity</h1>
@@ -206,7 +209,7 @@ date: "Monday, August 1, 2015"
 output: html_document
 ---
 
-## Trailing Distance Safety: Why the Two-Second Rule May Kill You
+## Trailing Distance Safety: Why the Two-Second Rule May Just Kill You
 
 ### Elements of Stopping Distance
 
@@ -261,7 +264,7 @@ Source: Ezekiel, M. (1930) Methods of Correlation Analysis. Wiley.
 <li>styles</li>
 <li>code chunks</li>
 </ul></li>
-<li><p>Different 'flavors' of R Markdown can provide additional functionality and customization</p></li>
+<li>Different 'flavors' of R Markdown provide additional functionality and customization</li>
 <li>Each flavor generally designed for a specific type of output
 <ul>
 <li>documents</li>
@@ -270,8 +273,8 @@ Source: Ezekiel, M. (1930) Methods of Correlation Analysis. Wiley.
 </ul></li>
 </ul>
 </div>
-<div id="r-markdown-a-means-to-an-end" class="slide section level1">
-<h1>R Markdown: A Means to an End</h1>
+<div id="r-markdown-merely-a-means-to-an-end" class="slide section level1">
+<h1>R Markdown: Merely A Means to an End</h1>
 <div style="margin-top:80px; text-align:center;">
 *.Rmd → <span class="pkgname">knitr</span> → *.md → <span class="pkgname">pandoc</span> → <span style="display:inline-block; margin-left:0.6em; vertical-align:middle; text-align:left;">*.pdf (requires TeK also)<br><br>*.doc<br><br>*.html (+ *.css, *.js *.ttf)</span>
 </div>
@@ -325,8 +328,10 @@ printing of the R code that generated the plot.
 
 </div>
 </div>
-<div id="r-markdown-yaml" class="slide section level1 incremental">
+<div id="r-markdown-yaml" class="slide section level1">
 <h1>R Markdown: YAML</h1>
+<div class="incremental">
+<div>
 <p>Standard stuff</p>
 <pre class="markdown">
 ---
@@ -336,18 +341,24 @@ date: "Friday, August 18, 2015"
 output: slidy_presentation
 ---
 </pre>
+</div>
+<div>
 <p>Other Common Options</p>
 <pre class="markdown">
 output:
   html_document:
     fig_height: 4
     fig_width: 4
-    self_contained: no
     smart: no
     theme: journal
+    <strong>self_contained: no</strong>
 </pre>
-<p>Easy Way to Change YAML Options</p>
-<p><img src="images/rstudio_markdown_options_472x430.png" alt="RStudio Markdown Editor" /></p>
+</div>
+<div>
+<p>Easy Way to Change Common YAML Options</p>
+<img src="images/rstudio_markdown_options_472x430.png" alt="RStudio Markdown Editor" />
+</div>
+<div>
 <p>Flavor Specific Options</p>
 <pre class="markdown">
 ---
@@ -363,6 +374,8 @@ output:
       in_header: idv_header.html    
 ---
 </pre>
+</div>
+</div>
 </div>
 <div id="r-markdown-paragraph-text" class="slide section level1">
 <h1>R Markdown: Paragraph Text</h1>
@@ -420,7 +433,7 @@ plot(x, type="b", pch=20, main="China
 <pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">30</span>) *<span class="st"> </span><span class="dv">1000</span>
 <span class="kw">plot</span>(x, <span class="dt">type=</span><span class="st">&quot;b&quot;</span>, <span class="dt">pch=</span><span class="dv">20</span>, <span class="dt">main=</span><span class="st">&quot;China </span>
 <span class="st">     Stock Market&quot;</span>)</code></pre>
-<img src="idv_berkeley-meetup_files/figure-slidy/plotchinastockmarket-1.png" title="" alt="" width="384" />
+<img src="interactive-data-viz_files/figure-slidy/plotchinastockmarket-1.png" title="" alt="" width="384" />
 </div>
 <div class="colclear">
 
@@ -443,7 +456,7 @@ plot(x, type="b", pch=20, main="China
 </ul>
 </div>
 <div class="colright" style="width:45%;">
-<img src="idv_berkeley-meetup_files/figure-slidy/chinastock2-1.png" title="" alt="" width="384" />
+<img src="interactive-data-viz_files/figure-slidy/chinastock2-1.png" title="" alt="" width="384" />
 </div>
 <div class="colclear">
 
@@ -478,7 +491,7 @@ ggplot(data=brake_dist, aes(x=speed, y=total_dist, group=surface, colour=surface
 geom_line() + geom_point()
 &#96;``
 </pre>
-<p><img src="idv_berkeley-meetup_files/figure-slidy/ggplotcars2-1.png" title="" alt="" width="672" /></p>
+<p><img src="interactive-data-viz_files/figure-slidy/ggplotcars2-1.png" title="" alt="" width="672" /></p>
 <h3 id="r-markdown-resources">R Markdown Resources</h3>
 <ul>
 <li>Cheatsheet: <a href="https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf" class="uri">https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf</a></li>
@@ -488,17 +501,20 @@ geom_line() + geom_point()
 <div id="interactivity" class="slide section level1">
 <h1>Interactivity</h1>
 <div class="colleft">
-<h3>Client Side Interactivity</h3>
+<h3>Client-side Interactivity</h3>
 <ul>
 <li>animation</li>
 <li>HTML widgets</li>
+</ul>
+<h3><br>Hybrid</h3>
+<ul>
+<li>googleVis - both browser and (local) server (?)</li>
 </ul>
 </div>
 <div class="colright">
 <h3>Server-side Interactivity</h3>
 <ul>
 <li>Shiny Apps</li>
-<li>gooogleVis (?)</li>
 </ul>
 </div>
 <div class="colclear">
@@ -510,7 +526,10 @@ geom_line() + geom_point()
 <ul>
 <li>You can turn a series of plots produced by a code chunk into an animation</li>
 <li>Add the <strong>fig.show='animate'</strong> code chunk option</li>
-<li>This requires the free utility <em>ffmpeg.exe</em> be installed (also a SWF option)</li>
+<li>This requires the free utility <em>ffmpeg</em> be installed (cross-platform)
+<ul>
+<li>also a SWF option</li>
+</ul></li>
 <li>Animation comes as embedded video (only visible in a browser)</li>
 <li>Recommend: self_contained: no</li>
 </ul>
@@ -521,7 +540,7 @@ for (i in 1:50) {
 }
 &#39;``</code></pre>
 <video width="384"  controls loop>
-<source src="idv_berkeley-meetup_files/figure-slidy/animate_test-.webm" />
+<source src="interactive-data-viz_files/figure-slidy/animate_test-.webm" />
 <p>
 video of chunk animate_test
 </p>
@@ -540,13 +559,13 @@ video of chunk animate_test
 <li>More info and widget gallery at <a href="http://www.htmlwidgets.org/" class="uri">http://www.htmlwidgets.org/</a></li>
 </ul>
 </div>
-<div id="html-widgets-dt" class="slide section level1">
-<h1>HTML Widgets: DT</h1>
+<div id="html-widget-dt" class="slide section level1">
+<h1>HTML Widget: DT</h1>
 <p><span class="pkgname">DT</span> package creates interactive HTML tables that support filtering, pagination, and sorting.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(DT)
 <span class="kw">datatable</span>(iris, <span class="dt">options =</span> <span class="kw">list</span>(<span class="dt">pageLength =</span> <span class="dv">10</span>))</code></pre>
-<p><div id="htmlwidget-9310" style="width:100%;height:auto;" class="datatables"></div>
-<script type="application/json" data-for="htmlwidget-9310">{"x":{"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122","123","124","125","126","127","128","129","130","131","132","133","134","135","136","137","138","139","140","141","142","143","144","145","146","147","148","149","150"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9,5.4,4.8,4.8,4.3,5.8,5.7,5.4,5.1,5.7,5.1,5.4,5.1,4.6,5.1,4.8,5,5,5.2,5.2,4.7,4.8,5.4,5.2,5.5,4.9,5,5.5,4.9,4.4,5.1,5,4.5,4.4,5,5.1,4.8,5.1,4.6,5.3,5,7,6.4,6.9,5.5,6.5,5.7,6.3,4.9,6.6,5.2,5,5.9,6,6.1,5.6,6.7,5.6,5.8,6.2,5.6,5.9,6.1,6.3,6.1,6.4,6.6,6.8,6.7,6,5.7,5.5,5.5,5.8,6,5.4,6,6.7,6.3,5.6,5.5,5.5,6.1,5.8,5,5.6,5.7,5.7,6.2,5.1,5.7,6.3,5.8,7.1,6.3,6.5,7.6,4.9,7.3,6.7,7.2,6.5,6.4,6.8,5.7,5.8,6.4,6.5,7.7,7.7,6,6.9,5.6,7.7,6.3,6.7,7.2,6.2,6.1,6.4,7.2,7.4,7.9,6.4,6.3,6.1,7.7,6.3,6.4,6,6.9,6.7,6.9,5.8,6.8,6.7,6.7,6.3,6.5,6.2,5.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1,3.7,3.4,3,3,4,4.4,3.9,3.5,3.8,3.8,3.4,3.7,3.6,3.3,3.4,3,3.4,3.5,3.4,3.2,3.1,3.4,4.1,4.2,3.1,3.2,3.5,3.6,3,3.4,3.5,2.3,3.2,3.5,3.8,3,3.8,3.2,3.7,3.3,3.2,3.2,3.1,2.3,2.8,2.8,3.3,2.4,2.9,2.7,2,3,2.2,2.9,2.9,3.1,3,2.7,2.2,2.5,3.2,2.8,2.5,2.8,2.9,3,2.8,3,2.9,2.6,2.4,2.4,2.7,2.7,3,3.4,3.1,2.3,3,2.5,2.6,3,2.6,2.3,2.7,3,2.9,2.9,2.5,2.8,3.3,2.7,3,2.9,3,3,2.5,2.9,2.5,3.6,3.2,2.7,3,2.5,2.8,3.2,3,3.8,2.6,2.2,3.2,2.8,2.8,2.7,3.3,3.2,2.8,3,2.8,3,2.8,3.8,2.8,2.8,2.6,3,3.4,3.1,3,3.1,3.1,3.1,2.7,3.2,3.3,3,2.5,3,3.4,3],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5,1.5,1.6,1.4,1.1,1.2,1.5,1.3,1.4,1.7,1.5,1.7,1.5,1,1.7,1.9,1.6,1.6,1.5,1.4,1.6,1.6,1.5,1.5,1.4,1.5,1.2,1.3,1.4,1.3,1.5,1.3,1.3,1.3,1.6,1.9,1.4,1.6,1.4,1.5,1.4,4.7,4.5,4.9,4,4.6,4.5,4.7,3.3,4.6,3.9,3.5,4.2,4,4.7,3.6,4.4,4.5,4.1,4.5,3.9,4.8,4,4.9,4.7,4.3,4.4,4.8,5,4.5,3.5,3.8,3.7,3.9,5.1,4.5,4.5,4.7,4.4,4.1,4,4.4,4.6,4,3.3,4.2,4.2,4.2,4.3,3,4.1,6,5.1,5.9,5.6,5.8,6.6,4.5,6.3,5.8,6.1,5.1,5.3,5.5,5,5.1,5.3,5.5,6.7,6.9,5,5.7,4.9,6.7,4.9,5.7,6,4.8,4.9,5.6,5.8,6.1,6.4,5.6,5.1,5.6,6.1,5.6,5.5,4.8,5.4,5.6,5.1,5.1,5.9,5.7,5.2,5,5.2,5.4,5.1],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1,0.2,0.2,0.1,0.1,0.2,0.4,0.4,0.3,0.3,0.3,0.2,0.4,0.2,0.5,0.2,0.2,0.4,0.2,0.2,0.2,0.2,0.4,0.1,0.2,0.2,0.2,0.2,0.1,0.2,0.2,0.3,0.3,0.2,0.6,0.4,0.3,0.2,0.2,0.2,0.2,1.4,1.5,1.5,1.3,1.5,1.3,1.6,1,1.3,1.4,1,1.5,1,1.4,1.3,1.4,1.5,1,1.5,1.1,1.8,1.3,1.5,1.2,1.3,1.4,1.4,1.7,1.5,1,1.1,1,1.2,1.6,1.5,1.6,1.5,1.3,1.3,1.3,1.2,1.4,1.2,1,1.3,1.2,1.3,1.3,1.1,1.3,2.5,1.9,2.1,1.8,2.2,2.1,1.7,1.8,1.8,2.5,2,1.9,2.1,2,2.4,2.3,1.8,2.2,2.3,1.5,2.3,2,2,1.8,2.1,1.8,1.8,1.8,2.1,1.6,1.9,2,2.2,1.5,1.4,2.3,2.4,1.8,1.8,2.1,2.4,2.3,1.9,2.3,2.5,2.3,1.9,2,2.3,1.8],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> </th>\n      <th>Sepal.Length</th>\n      <th>Sepal.Width</th>\n      <th>Petal.Length</th>\n      <th>Petal.Width</th>\n      <th>Species</th>\n    </tr>\n  </thead>\n</table>","options":{"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"callback":null,"filter":"none"},"evals":[]}</script></p>
+<p><div id="htmlwidget-2487" style="width:100%;height:auto;" class="datatables"></div>
+<script type="application/json" data-for="htmlwidget-2487">{"x":{"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122","123","124","125","126","127","128","129","130","131","132","133","134","135","136","137","138","139","140","141","142","143","144","145","146","147","148","149","150"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9,5.4,4.8,4.8,4.3,5.8,5.7,5.4,5.1,5.7,5.1,5.4,5.1,4.6,5.1,4.8,5,5,5.2,5.2,4.7,4.8,5.4,5.2,5.5,4.9,5,5.5,4.9,4.4,5.1,5,4.5,4.4,5,5.1,4.8,5.1,4.6,5.3,5,7,6.4,6.9,5.5,6.5,5.7,6.3,4.9,6.6,5.2,5,5.9,6,6.1,5.6,6.7,5.6,5.8,6.2,5.6,5.9,6.1,6.3,6.1,6.4,6.6,6.8,6.7,6,5.7,5.5,5.5,5.8,6,5.4,6,6.7,6.3,5.6,5.5,5.5,6.1,5.8,5,5.6,5.7,5.7,6.2,5.1,5.7,6.3,5.8,7.1,6.3,6.5,7.6,4.9,7.3,6.7,7.2,6.5,6.4,6.8,5.7,5.8,6.4,6.5,7.7,7.7,6,6.9,5.6,7.7,6.3,6.7,7.2,6.2,6.1,6.4,7.2,7.4,7.9,6.4,6.3,6.1,7.7,6.3,6.4,6,6.9,6.7,6.9,5.8,6.8,6.7,6.7,6.3,6.5,6.2,5.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1,3.7,3.4,3,3,4,4.4,3.9,3.5,3.8,3.8,3.4,3.7,3.6,3.3,3.4,3,3.4,3.5,3.4,3.2,3.1,3.4,4.1,4.2,3.1,3.2,3.5,3.6,3,3.4,3.5,2.3,3.2,3.5,3.8,3,3.8,3.2,3.7,3.3,3.2,3.2,3.1,2.3,2.8,2.8,3.3,2.4,2.9,2.7,2,3,2.2,2.9,2.9,3.1,3,2.7,2.2,2.5,3.2,2.8,2.5,2.8,2.9,3,2.8,3,2.9,2.6,2.4,2.4,2.7,2.7,3,3.4,3.1,2.3,3,2.5,2.6,3,2.6,2.3,2.7,3,2.9,2.9,2.5,2.8,3.3,2.7,3,2.9,3,3,2.5,2.9,2.5,3.6,3.2,2.7,3,2.5,2.8,3.2,3,3.8,2.6,2.2,3.2,2.8,2.8,2.7,3.3,3.2,2.8,3,2.8,3,2.8,3.8,2.8,2.8,2.6,3,3.4,3.1,3,3.1,3.1,3.1,2.7,3.2,3.3,3,2.5,3,3.4,3],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5,1.5,1.6,1.4,1.1,1.2,1.5,1.3,1.4,1.7,1.5,1.7,1.5,1,1.7,1.9,1.6,1.6,1.5,1.4,1.6,1.6,1.5,1.5,1.4,1.5,1.2,1.3,1.4,1.3,1.5,1.3,1.3,1.3,1.6,1.9,1.4,1.6,1.4,1.5,1.4,4.7,4.5,4.9,4,4.6,4.5,4.7,3.3,4.6,3.9,3.5,4.2,4,4.7,3.6,4.4,4.5,4.1,4.5,3.9,4.8,4,4.9,4.7,4.3,4.4,4.8,5,4.5,3.5,3.8,3.7,3.9,5.1,4.5,4.5,4.7,4.4,4.1,4,4.4,4.6,4,3.3,4.2,4.2,4.2,4.3,3,4.1,6,5.1,5.9,5.6,5.8,6.6,4.5,6.3,5.8,6.1,5.1,5.3,5.5,5,5.1,5.3,5.5,6.7,6.9,5,5.7,4.9,6.7,4.9,5.7,6,4.8,4.9,5.6,5.8,6.1,6.4,5.6,5.1,5.6,6.1,5.6,5.5,4.8,5.4,5.6,5.1,5.1,5.9,5.7,5.2,5,5.2,5.4,5.1],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1,0.2,0.2,0.1,0.1,0.2,0.4,0.4,0.3,0.3,0.3,0.2,0.4,0.2,0.5,0.2,0.2,0.4,0.2,0.2,0.2,0.2,0.4,0.1,0.2,0.2,0.2,0.2,0.1,0.2,0.2,0.3,0.3,0.2,0.6,0.4,0.3,0.2,0.2,0.2,0.2,1.4,1.5,1.5,1.3,1.5,1.3,1.6,1,1.3,1.4,1,1.5,1,1.4,1.3,1.4,1.5,1,1.5,1.1,1.8,1.3,1.5,1.2,1.3,1.4,1.4,1.7,1.5,1,1.1,1,1.2,1.6,1.5,1.6,1.5,1.3,1.3,1.3,1.2,1.4,1.2,1,1.3,1.2,1.3,1.3,1.1,1.3,2.5,1.9,2.1,1.8,2.2,2.1,1.7,1.8,1.8,2.5,2,1.9,2.1,2,2.4,2.3,1.8,2.2,2.3,1.5,2.3,2,2,1.8,2.1,1.8,1.8,1.8,2.1,1.6,1.9,2,2.2,1.5,1.4,2.3,2.4,1.8,1.8,2.1,2.4,2.3,1.9,2.3,2.5,2.3,1.9,2,2.3,1.8],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> </th>\n      <th>Sepal.Length</th>\n      <th>Sepal.Width</th>\n      <th>Petal.Length</th>\n      <th>Petal.Width</th>\n      <th>Species</th>\n    </tr>\n  </thead>\n</table>","options":{"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"callback":null,"filter":"none"},"evals":[]}</script></p>
 <p>Under the hood:</p>
 <pre class="scrolling-code" style="height:25%;">
 &lt;h1>HTML Widgets: DT Demo&lt;/h1> &lt;p>&lt;span class="pkgname">DT&lt;/span> package creates
@@ -623,8 +642,8 @@ right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWid
 <li><p>More info see <a href="http://rstudio.github.io/DT/extensions.html" class="uri">http://rstudio.github.io/DT/extensions.html</a></p></li>
 </ul>
 </div>
-<div id="html-widgets-dygraphs" class="slide section level1">
-<h1>HTML Widgets: Dygraphs</h1>
+<div id="html-widget-dygraphs" class="slide section level1">
+<h1>HTML Widget: Dygraphs</h1>
 <p><span class="pkgname">dygraphs</span> provides rich facilities for charting time-series data in R and includes support for many interactive features including series/point highlighting, zooming, and panning.package creates interactive HTML tables that support filtering, pagination, and sorting.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(dygraphs)
 lungDeaths &lt;-<span class="st"> </span><span class="kw">cbind</span>(mdeaths, fdeaths)
@@ -633,12 +652,12 @@ lungDeaths &lt;-<span class="st"> </span><span class="kw">cbind</span>(mdeaths, 
 <span class="st">  </span><span class="kw">dySeries</span>(<span class="st">&quot;fdeaths&quot;</span>, <span class="dt">label =</span> <span class="st">&quot;Female&quot;</span>) %&gt;%
 <span class="st">  </span><span class="kw">dyOptions</span>(<span class="dt">stackedGraph =</span> <span class="ot">TRUE</span>) %&gt;%
 <span class="st">  </span><span class="kw">dyRangeSelector</span>(<span class="dt">height =</span> <span class="dv">20</span>)</code></pre>
-<p><div id="htmlwidget-2667" style="width:672px;height:384px;" class="dygraphs"></div>
-<script type="application/json" data-for="htmlwidget-2667">{"x":{"attrs":{"labels":["month","Male","Female"],"legend":"auto","retainDateWindow":false,"axes":{"x":{"pixelsPerLabel":50}},"series":{"Male":{"axis":"y"},"Female":{"axis":"y"}},"stackedGraph":true,"fillGraph":false,"fillAlpha":0.15,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colorValue":0.5,"colorSaturation":1,"drawXAxis":true,"drawYAxis":true,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"black","axisLineWidth":0.3,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":50,"drawGrid":true,"gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"maxNumberWidth":6,"animatedZooms":false,"showRangeSelector":true,"rangeSelectorHeight":20,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"scale":"monthly","annotations":[],"shadings":[],"events":[],"data":[["1974-01-01T00:00:00Z","1974-02-01T00:00:00Z","1974-03-01T00:00:00Z","1974-04-01T00:00:00Z","1974-05-01T00:00:00Z","1974-06-01T00:00:00Z","1974-07-01T00:00:00Z","1974-08-01T00:00:00Z","1974-09-01T00:00:00Z","1974-10-01T00:00:00Z","1974-11-01T00:00:00Z","1974-12-01T00:00:00Z","1975-01-01T00:00:00Z","1975-02-01T00:00:00Z","1975-03-01T00:00:00Z","1975-04-01T00:00:00Z","1975-05-01T00:00:00Z","1975-06-01T00:00:00Z","1975-07-01T00:00:00Z","1975-08-01T00:00:00Z","1975-09-01T00:00:00Z","1975-10-01T00:00:00Z","1975-11-01T00:00:00Z","1975-12-01T00:00:00Z","1976-01-01T00:00:00Z","1976-02-01T00:00:00Z","1976-03-01T00:00:00Z","1976-04-01T00:00:00Z","1976-05-01T00:00:00Z","1976-06-01T00:00:00Z","1976-07-01T00:00:00Z","1976-08-01T00:00:00Z","1976-09-01T00:00:00Z","1976-10-01T00:00:00Z","1976-11-01T00:00:00Z","1976-12-01T00:00:00Z","1977-01-01T00:00:00Z","1977-02-01T00:00:00Z","1977-03-01T00:00:00Z","1977-04-01T00:00:00Z","1977-05-01T00:00:00Z","1977-06-01T00:00:00Z","1977-07-01T00:00:00Z","1977-08-01T00:00:00Z","1977-09-01T00:00:00Z","1977-10-01T00:00:00Z","1977-11-01T00:00:00Z","1977-12-01T00:00:00Z","1978-01-01T00:00:00Z","1978-02-01T00:00:00Z","1978-03-01T00:00:00Z","1978-04-01T00:00:00Z","1978-05-01T00:00:00Z","1978-06-01T00:00:00Z","1978-07-01T00:00:00Z","1978-08-01T00:00:00Z","1978-09-01T00:00:00Z","1978-10-01T00:00:00Z","1978-11-01T00:00:00Z","1978-12-01T00:00:00Z","1979-01-01T00:00:00Z","1979-02-01T00:00:00Z","1979-03-01T00:00:00Z","1979-04-01T00:00:00Z","1979-05-01T00:00:00Z","1979-06-01T00:00:00Z","1979-07-01T00:00:00Z","1979-08-01T00:00:00Z","1979-09-01T00:00:00Z","1979-10-01T00:00:00Z","1979-11-01T00:00:00Z","1979-12-01T00:00:00Z"],[2134,1863,1877,1877,1492,1249,1280,1131,1209,1492,1621,1846,2103,2137,2153,1833,1403,1288,1186,1133,1053,1347,1545,2066,2020,2750,2283,1479,1189,1160,1113,970,999,1208,1467,2059,2240,1634,1722,1801,1246,1162,1087,1013,959,1179,1229,1655,2019,2284,1942,1423,1340,1187,1098,1004,970,1140,1110,1812,2263,1820,1846,1531,1215,1075,1056,975,940,1081,1294,1341],[901,689,827,677,522,406,441,393,387,582,578,666,830,752,785,664,467,438,421,412,343,440,531,771,767,1141,896,532,447,420,376,330,357,445,546,764,862,660,663,643,502,392,411,348,387,385,411,638,796,853,737,546,530,446,431,362,387,430,425,679,821,785,727,612,478,429,405,379,393,411,487,574]],"fixedtz":false,"tzone":""},"evals":["attrs.interactionModel"]}</script></p>
+<p><div id="htmlwidget-6659" style="width:672px;height:384px;" class="dygraphs"></div>
+<script type="application/json" data-for="htmlwidget-6659">{"x":{"attrs":{"labels":["month","Male","Female"],"legend":"auto","retainDateWindow":false,"axes":{"x":{"pixelsPerLabel":50}},"series":{"Male":{"axis":"y"},"Female":{"axis":"y"}},"stackedGraph":true,"fillGraph":false,"fillAlpha":0.15,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colorValue":0.5,"colorSaturation":1,"drawXAxis":true,"drawYAxis":true,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"black","axisLineWidth":0.3,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":50,"drawGrid":true,"gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"maxNumberWidth":6,"animatedZooms":false,"showRangeSelector":true,"rangeSelectorHeight":20,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"scale":"monthly","annotations":[],"shadings":[],"events":[],"data":[["1974-01-01T00:00:00Z","1974-02-01T00:00:00Z","1974-03-01T00:00:00Z","1974-04-01T00:00:00Z","1974-05-01T00:00:00Z","1974-06-01T00:00:00Z","1974-07-01T00:00:00Z","1974-08-01T00:00:00Z","1974-09-01T00:00:00Z","1974-10-01T00:00:00Z","1974-11-01T00:00:00Z","1974-12-01T00:00:00Z","1975-01-01T00:00:00Z","1975-02-01T00:00:00Z","1975-03-01T00:00:00Z","1975-04-01T00:00:00Z","1975-05-01T00:00:00Z","1975-06-01T00:00:00Z","1975-07-01T00:00:00Z","1975-08-01T00:00:00Z","1975-09-01T00:00:00Z","1975-10-01T00:00:00Z","1975-11-01T00:00:00Z","1975-12-01T00:00:00Z","1976-01-01T00:00:00Z","1976-02-01T00:00:00Z","1976-03-01T00:00:00Z","1976-04-01T00:00:00Z","1976-05-01T00:00:00Z","1976-06-01T00:00:00Z","1976-07-01T00:00:00Z","1976-08-01T00:00:00Z","1976-09-01T00:00:00Z","1976-10-01T00:00:00Z","1976-11-01T00:00:00Z","1976-12-01T00:00:00Z","1977-01-01T00:00:00Z","1977-02-01T00:00:00Z","1977-03-01T00:00:00Z","1977-04-01T00:00:00Z","1977-05-01T00:00:00Z","1977-06-01T00:00:00Z","1977-07-01T00:00:00Z","1977-08-01T00:00:00Z","1977-09-01T00:00:00Z","1977-10-01T00:00:00Z","1977-11-01T00:00:00Z","1977-12-01T00:00:00Z","1978-01-01T00:00:00Z","1978-02-01T00:00:00Z","1978-03-01T00:00:00Z","1978-04-01T00:00:00Z","1978-05-01T00:00:00Z","1978-06-01T00:00:00Z","1978-07-01T00:00:00Z","1978-08-01T00:00:00Z","1978-09-01T00:00:00Z","1978-10-01T00:00:00Z","1978-11-01T00:00:00Z","1978-12-01T00:00:00Z","1979-01-01T00:00:00Z","1979-02-01T00:00:00Z","1979-03-01T00:00:00Z","1979-04-01T00:00:00Z","1979-05-01T00:00:00Z","1979-06-01T00:00:00Z","1979-07-01T00:00:00Z","1979-08-01T00:00:00Z","1979-09-01T00:00:00Z","1979-10-01T00:00:00Z","1979-11-01T00:00:00Z","1979-12-01T00:00:00Z"],[2134,1863,1877,1877,1492,1249,1280,1131,1209,1492,1621,1846,2103,2137,2153,1833,1403,1288,1186,1133,1053,1347,1545,2066,2020,2750,2283,1479,1189,1160,1113,970,999,1208,1467,2059,2240,1634,1722,1801,1246,1162,1087,1013,959,1179,1229,1655,2019,2284,1942,1423,1340,1187,1098,1004,970,1140,1110,1812,2263,1820,1846,1531,1215,1075,1056,975,940,1081,1294,1341],[901,689,827,677,522,406,441,393,387,582,578,666,830,752,785,664,467,438,421,412,343,440,531,771,767,1141,896,532,447,420,376,330,357,445,546,764,862,660,663,643,502,392,411,348,387,385,411,638,796,853,737,546,530,446,431,362,387,430,425,679,821,785,727,612,478,429,405,379,393,411,487,574]],"fixedtz":false,"tzone":""},"evals":["attrs.interactionModel"]}</script></p>
 <p>More info: <a href="http://rstudio.github.io/dygraphs" class="uri">http://rstudio.github.io/dygraphs</a></p>
 </div>
-<div id="html-widgets-leaflet-demo" class="slide section level1">
-<h1>HTML Widgets: Leaflet Demo</h1>
+<div id="html-widget-leaflet" class="slide section level1">
+<h1>HTML Widget: Leaflet</h1>
 <h3 id="leaflet_demo.html"><a href="Leaflet_demo.html" target="_top">Leaflet_demo.html</a></h3>
 </div>
 <div id="googlevis" class="slide section level1">
@@ -653,8 +672,8 @@ lungDeaths &lt;-<span class="st"> </span><span class="kw">cbind</span>(mdeaths, 
 <li>Charts are displayed locally via the R HTTP help server.</li>
 <li>Flash alert! A modern browser with Internet connection is required and for some Flash charts.</li>
 </ul>
-<h3 id="setting-options">Setting Options</h3>
-<p>The first thing we do is to create a code chunk that sets the googleVis options first to change the behaviour of plot.gvis, so that only the chart component of the HTML file is spit out. You normally would hide a code chunk like this by setting echo=FALSE and results='hide'.</p>
+<h3 id="first---code-chunk-to-set-options">First - Code Chunk to Set Options</h3>
+<p>The first thing we do is to create a code chunk that sets the googleVis options first to change the behaviour of plot.gvis, so that only the chart component of the HTML file is spit out. You normally would hide a code chunk like this by setting <em>echo=FALSE</em> and <em>results='hide'</em>.</p>
 <pre><code>```{r setOptions, message=FALSE}
 suppressPackageStartupMessages(library(googleVis))
 op &lt;- options(gvis.plot.tag=&#39;chart&#39;)
@@ -666,12 +685,12 @@ Pie &lt;- gvisPieChart(CityPopularity, options = list(width=400, height=400))
 plot(Pie)
 ```</code></pre>
 <!-- PieChart generated in R 3.2.2 by googleVis 0.5.9 package -->
-<!-- Wed Aug 19 20:08:51 2015 -->
+<!-- Fri Aug 21 17:07:28 2015 -->
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataPieChartID190c4c192559 () {
+function gvisDataPieChartID21543e901f34 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -707,15 +726,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartPieChartID190c4c192559() {
-var data = gvisDataPieChartID190c4c192559();
+function drawChartPieChartID21543e901f34() {
+var data = gvisDataPieChartID21543e901f34();
 var options = {};
 options["allowHtml"] = true;
 options["width"] =    400;
 options["height"] =    400;
 
     var chart = new google.visualization.PieChart(
-    document.getElementById('PieChartID190c4c192559')
+    document.getElementById('PieChartID21543e901f34')
     );
     chart.draw(data,options);
     
@@ -739,9 +758,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartPieChartID190c4c192559);
+callbacks.push(drawChartPieChartID21543e901f34);
 })();
-function displayChartPieChartID190c4c192559() {
+function displayChartPieChartID21543e901f34() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -764,9 +783,9 @@ callbacks.shift()();
 // jsFooter
 </script>
 <!-- jsChart -->
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID190c4c192559"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID21543e901f34"></script>
 <!-- divChart -->
-<div id="PieChartID190c4c192559" style="width: 400; height: 400;">
+<div id="PieChartID21543e901f34" style="width: 400; height: 400;">
 
 </div>
 <h3 id="supercharged-scatter-plot">Supercharged Scatter Plot</h3>
@@ -794,7 +813,7 @@ gvScat &lt;- gvisScatterChart(curvy,
 plot(gvScat)
 ```</code></pre>
 <!-- ScatterChart generated in R 3.2.2 by googleVis 0.5.9 package -->
-<!-- Wed Aug 19 20:08:51 2015 -->
+<!-- Fri Aug 21 17:07:28 2015 -->
 <!-- jsHeader -->
 <script type="text/javascript">
  
@@ -1691,12 +1710,12 @@ callbacks.shift()();
 <pre class="sourceCode r"><code class="sourceCode r">M &lt;-<span class="st"> </span><span class="kw">gvisMotionChart</span>(Fruits, <span class="st">&#39;Fruit&#39;</span>, <span class="st">&#39;Year&#39;</span>, <span class="dt">options=</span><span class="kw">list</span>(<span class="dt">width=</span><span class="dv">400</span>, <span class="dt">height=</span><span class="dv">350</span>))
 <span class="kw">plot</span>(M)</code></pre>
 <!-- MotionChart generated in R 3.2.2 by googleVis 0.5.9 package -->
-<!-- Wed Aug 19 20:08:51 2015 -->
+<!-- Fri Aug 21 17:07:28 2015 -->
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataMotionChartID190c2b336456 () {
+function gvisDataMotionChartID21547f4f694c () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -1794,15 +1813,15 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartMotionChartID190c2b336456() {
-var data = gvisDataMotionChartID190c2b336456();
+function drawChartMotionChartID21547f4f694c() {
+var data = gvisDataMotionChartID21547f4f694c();
 var options = {};
 options["width"] =    400;
 options["height"] =    350;
 options["state"] = "";
 
     var chart = new google.visualization.MotionChart(
-    document.getElementById('MotionChartID190c2b336456')
+    document.getElementById('MotionChartID21547f4f694c')
     );
     chart.draw(data,options);
     
@@ -1826,9 +1845,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartMotionChartID190c2b336456);
+callbacks.push(drawChartMotionChartID21547f4f694c);
 })();
-function displayChartMotionChartID190c2b336456() {
+function displayChartMotionChartID21547f4f694c() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -1851,9 +1870,9 @@ callbacks.shift()();
 // jsFooter
 </script>
 <!-- jsChart -->
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID190c2b336456"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartMotionChartID21547f4f694c"></script>
 <!-- divChart -->
-<div id="MotionChartID190c2b336456" style="width: 400; height: 350;">
+<div id="MotionChartID21547f4f694c" style="width: 400; height: 350;">
 
 </div>
 <blockquote>
@@ -1994,7 +2013,7 @@ renderPlot({
 <h3 id="general-public">General Public</h3>
 <p>HTML reports</p>
 <ul>
-<li>any standard server (be sure to include the js &amp; css files</li>
+<li>any standard server (be sure to include the js &amp; css files)</li>
 <li>RPubs (free service, integrated with RStudio)</li>
 </ul>
 <p>Shiny documents and apps</p>
@@ -2002,19 +2021,21 @@ renderPlot({
 <li>shiny.io
 <ul>
 <li>free account allows 5 public apps</li>
-<li>see <span class="pkgname">shinyapps</span> to streamline</li>
+<li>see <span class="pkgname">shinyapps</span> package to streamline uploading</li>
 </ul></li>
 <li>install shiny server on your own network</li>
 </ul>
 <h3 id="r-users">R Users</h3>
 <ul>
-<li>share scripts and Rmd file</li>
-<li>bundle in your package</li>
+<li>share scripts and Rmd files</li>
+<li>bundle in a package</li>
 </ul>
 </div>
 <div id="summary" class="slide section level1">
 <h1>Summary</h1>
-<p>begin by thinking about <em>why</em> you want to make data visualizations interactive numerous options through R Markdown heavy duty interactivity possible with Shiny</p>
+<p>Think about <em>why</em> you want to make data visualizations interactive</p>
+<p>Many options using R Markdown</p>
+<p>Heavy duty interactivity possible with Shiny</p>
 </div>
 
   <!-- dynamically load mathjax for compatibility with self-contained -->

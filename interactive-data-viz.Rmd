@@ -37,14 +37,20 @@ knit_hooks$set(source = function(x, options){
 * Shiny
 * Publishing
 
+<div style="text-align:center; margin: 100px 0px;">
+<u>Keyboard shortcuts for viewing slides</u><br><em>b</em>: bigger font<br><em>s</em>: smaller font<br><em>c</em>: table of contents<br><em>a</em>: show all slides at once</div>
+
+
+
 ***
 
 <div style="text-align:center; margin: 25px 0px;">
 <img src="images/burgess_viewofsf_800x446.jpg" style="border:10px solid SaddleBrown;">
 </div>
 
-<div style="text-align:center; margin: 25px 0px;">
-<http://github.com/ajlyons/>
+<div style="text-align:center; margin: 25px 0px; line-height: 200%;" class="incremental">
+<span>Slides: <http://www.andylyons.org/pres/idv_berkmeetup/interactive-data-viz.html></span><br>
+<span>Rmd: <https://github.com/ajlyons/idv_berkmeetup></span>
 </div>
 
 # Interactivity Sampler
@@ -55,7 +61,7 @@ knit_hooks$set(source = function(x, options){
 - <https://gallery.shinyapps.io/lake_erie_fisheries_stock_assessment_app/>
 - <http://shiny.snap.uaf.edu/ak_station_cru_eda/>
 
-# Is All Interactivity Equal?
+# Why Do We Like Interactivity?
 
 # Spectrum of Interactivity 
 
@@ -137,7 +143,7 @@ date: "Monday, August 1, 2015"
 output: html_document
 ---
 
-## Trailing Distance Safety: Why the Two-Second Rule May Kill You
+## Trailing Distance Safety: Why the Two-Second Rule May Just Kill You
 
 ### Elements of Stopping Distance
 
@@ -189,15 +195,13 @@ Source: Ezekiel, M. (1930) Methods of Correlation Analysis. Wiley.
     + formatting
     + styles
     + code chunks
-    
 - Different 'flavors' of R Markdown provide additional functionality and customization
-
 - Each flavor generally designed for a specific type of output
     + documents
     + presentation (RPresentations, ioslides, slidy, slidify, beamer)
     + app (Shiny)
 
-# R Markdown: A Means to an End
+# R Markdown: Merely A Means to an End
 
 <div style="margin-top:80px; text-align:center;">
 \*.Rmd &#8594; <span class="pkgname">knitr</span> &#8594; \*.md &#8594; <span class="pkgname">pandoc</span> &#8594; <span style="display:inline-block; margin-left:0.6em; vertical-align:middle; text-align:left;">\*.pdf (requires TeK also)<br><br>\*.doc<br><br>\*.html (+ \*.css, \*.js \*.ttf)</span>
@@ -259,8 +263,10 @@ printing of the R code that generated the plot.
 
 <div class="colclear"></div>
 
-# R Markdown: YAML {.incremental}
+# R Markdown: YAML
 
+<div class="incremental">
+<div>
 Standard stuff
 
 <pre class="markdown">
@@ -271,7 +277,9 @@ date: "Friday, August 18, 2015"
 output: slidy_presentation
 ---
 </pre>
+</div>
 
+<div>
 Other Common Options
 
 <pre class="markdown">
@@ -279,15 +287,19 @@ output:
   html_document:
     fig_height: 4
     fig_width: 4
-    self_contained: no
     smart: no
     theme: journal
+    <strong>self_contained: no</strong>
 </pre>
+</div>
 
-Easy Way to Change YAML Options
+<div>
+Easy Way to Change Common YAML Options
 
 ![RStudio Markdown Editor](images/rstudio_markdown_options_472x430.png)
+</div>
 
+<div>
 Flavor Specific Options
 
 <pre class="markdown">
@@ -304,7 +316,9 @@ output:
       in_header: idv_header.html    
 ---
 </pre>
+</div>
 
+</div>
 
 # R Markdown: Paragraph Text
 
@@ -486,10 +500,14 @@ geom_line() + geom_point()
 
 <div class="colleft">
 
-### Client Side Interactivity
+### Client-side Interactivity
 
 - animation
 - HTML widgets
+
+### <br>Hybrid
+
+- googleVis - both browser and (local) server (?)
 
 </div>
 
@@ -498,7 +516,6 @@ geom_line() + geom_point()
 ### Server-side Interactivity
 
 - Shiny Apps
-- gooogleVis (?)
 
 </div>
 
@@ -509,7 +526,8 @@ geom_line() + geom_point()
 
 - You can turn a series of plots produced by a code chunk into an animation
 - Add the __fig.show='animate'__ code chunk option
-- This requires the free utility _ffmpeg.exe_ be installed (also a SWF option)
+- This requires the free utility _ffmpeg_ be installed (cross-platform)
+    + also a SWF option
 - Animation comes as embedded video (only visible in a browser)
 - Recommend: self_contained: no
 
@@ -539,7 +557,7 @@ for (i in 1:50) {
     + some packages are on github, require <span class="pkgname">devtools</span> to install
 - More info and widget gallery at <http://www.htmlwidgets.org/>
 
-# HTML Widgets: DT 
+# HTML Widget: DT 
 
 <span class="pkgname">DT</span> package creates interactive HTML tables that support filtering, pagination, and sorting.
 
@@ -628,7 +646,7 @@ Other options:
 - More info see <http://rstudio.github.io/DT/extensions.html>
 
 
-# HTML Widgets: Dygraphs
+# HTML Widget: Dygraphs
 
 <span class="pkgname">dygraphs</span> provides rich facilities for charting time-series data in R and includes support for many interactive features including series/point highlighting, zooming, and panning.package creates interactive HTML tables that support filtering, pagination, and sorting.
 
@@ -644,7 +662,7 @@ dygraph(lungDeaths) %>%
 
 More info: <http://rstudio.github.io/dygraphs>
 
-# HTML Widgets: Leaflet Demo
+# HTML Widget: Leaflet 
 
 ### <a href="Leaflet_demo.html" target="_top">Leaflet_demo.html</a>
 
@@ -660,9 +678,9 @@ More info: <http://rstudio.github.io/dygraphs>
 - Flash alert! A modern browser with Internet connection is required and for some Flash charts. 
 
 
-### Setting Options
+### First - Code Chunk to Set Options
 
-The first thing we do is to create a code chunk that sets the googleVis options first to change the behaviour of plot.gvis, so that only the chart component of the HTML file is spit out. You normally would hide a code chunk like this by setting echo=FALSE and  results='hide'.
+The first thing we do is to create a code chunk that sets the googleVis options first to change the behaviour of plot.gvis, so that only the chart component of the HTML file is spit out. You normally would hide a code chunk like this by setting _echo=FALSE_ and _results='hide'_.
 
 ```{r setOptions, message=FALSE, verbatim=TRUE}
 suppressPackageStartupMessages(library(googleVis))
@@ -876,27 +894,27 @@ Manipulate
 
 HTML reports
 
-- any standard server (be sure to include the js & css files
+- any standard server (be sure to include the js & css files)
 - RPubs (free service, integrated with RStudio)
 
 Shiny documents and apps
 
 - shiny.io 
     + free account allows 5 public apps
-    + see <span class="pkgname">shinyapps</span> to streamline
+    + see <span class="pkgname">shinyapps</span> package to streamline uploading
 - install shiny server on your own network
 
 ### R Users
 
-- share scripts and Rmd file
-- bundle in your package
+- share scripts and Rmd files
+- bundle in a package
 
 # Summary
 
-begin by thinking about _why_ you want to make data visualizations interactive
-numerous options through R Markdown
-heavy duty interactivity possible with Shiny
+Think about _why_ you want to make data visualizations interactive
 
+Many options using R Markdown
 
+Heavy duty interactivity possible with Shiny
 
 
